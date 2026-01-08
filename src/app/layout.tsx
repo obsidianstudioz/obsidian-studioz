@@ -1,7 +1,7 @@
 import { Footer, Navbar, SmoothScroll } from "@/components/layout";
 import "@/styles/globals.css";
 import "lenis/dist/lenis.css";
-
+import { Analytics } from "@vercel/analytics/next"
 import { Geist, Playfair_Display } from "next/font/google";
 
 // export const metadata: Metadata = {
@@ -26,6 +26,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${geist.variable} ${titleFont.variable}`}>
+      <Analytics />
       <SmoothScroll />
       <body>
         <Navbar />
