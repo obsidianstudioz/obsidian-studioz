@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState, useRef } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import {
   motion,
   useScroll,
@@ -218,21 +220,15 @@ export function Navbar() {
           transition={{ duration: 0.3 }}
         >
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <div className="relative flex h-7 w-7 items-center justify-center overflow-hidden rounded-md bg-gradient-to-br from-orange-400 to-orange-600 sm:h-9 sm:w-9 sm:rounded-lg">
-              <span className="font-title text-base font-bold text-zinc-950 sm:text-lg">
-                O
-              </span>
-            </div>
-
-            <span className="font-title text-base font-light tracking-wide text-zinc-100 sm:text-lg">
-              Obsidian
-              <span className="bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent">
-                {" "}
-                Studioz
-              </span>
-            </span>
-          </a>
+          <Link href="/" className="flex items-center gap-2">
+            <Image 
+              src="/logo.svg" 
+              alt="Obsidian Studioz" 
+              width={36}
+              height={36}
+              className="h-7 w-auto sm:h-9 transition-transform hover:scale-110"
+            />
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden items-center gap-0.5 md:flex lg:gap-1">

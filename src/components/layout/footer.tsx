@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useRef, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import { motion, useSpring } from "motion/react";
 import { FaInstagram, FaWhatsapp, FaFacebookF } from "react-icons/fa";
 import { BsThreads } from "react-icons/bs";
@@ -114,35 +116,21 @@ export function Footer() {
         <div className="grid gap-12 pb-16 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand section */}
           <div className="lg:col-span-1">
-            <motion.a
-              href="#"
-              className="group mb-6 inline-flex items-center gap-3"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <div className="relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl bg-linear-to-br from-orange-400 to-orange-600">
-                <motion.div
-                  className="absolute inset-0 bg-linear-to-tr from-transparent via-white/20 to-white/40"
-                  animate={{ x: ["-100%", "100%"] }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    repeatDelay: 4,
-                    ease: "easeInOut",
-                  }}
+            <Link href="/">
+              <motion.div
+                className="mb-6 inline-flex items-center gap-3"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <Image 
+                  src="/logo.svg" 
+                  alt="Obsidian Studioz" 
+                  width={48}
+                  height={48}
+                  className="h-12 w-auto transition-transform hover:scale-110"
                 />
-                <span className="font-title relative text-2xl font-bold text-zinc-950">
-                  O
-                </span>
-              </div>
-              <span className="font-title text-2xl font-light text-zinc-100">
-                Obsidian
-                <span className="bg-linear-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent">
-                  {" "}
-                  Studioz
-                </span>
-              </span>
-            </motion.a>
+              </motion.div>
+            </Link>
 
             <p className="mb-6 max-w-xs text-sm leading-relaxed text-zinc-500">
               Crafting digital masterpieces that transcend the ordinary.
