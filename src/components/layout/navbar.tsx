@@ -221,12 +221,12 @@ export function Navbar() {
         >
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <Image 
-              src="/logo.svg" 
-              alt="Obsidian Studioz" 
+            <Image
+              src="/logo.svg"
+              alt="Obsidian Studioz"
               width={36}
               height={36}
-              className="h-7 w-auto sm:h-9 transition-transform hover:scale-110"
+              className="h-7 w-auto transition-transform hover:scale-110 sm:h-9"
             />
           </Link>
 

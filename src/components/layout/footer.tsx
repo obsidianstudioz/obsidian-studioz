@@ -122,9 +122,9 @@ export function Footer() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <Image 
-                  src="/logo.svg" 
-                  alt="Obsidian Studioz" 
+                <Image
+                  src="/logo.svg"
+                  alt="Obsidian Studioz"
                   width={48}
                   height={48}
                   className="h-12 w-auto transition-transform hover:scale-110"
