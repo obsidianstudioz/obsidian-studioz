@@ -241,7 +241,7 @@ export function Navbar() {
 
           {/* CTA Button */}
           <motion.a
-            href="#contact"
+            href="/contact"
             className="group relative hidden overflow-hidden rounded-full bg-gradient-to-r from-orange-500 to-orange-600 px-4 py-2 text-xs font-medium text-zinc-950 md:block lg:px-6 lg:py-2.5 lg:text-sm"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
