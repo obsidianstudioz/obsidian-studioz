@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "digital agency",
   ],
   verification: {
-    google: 'google-site-verification=SEh3ULd5KviH_8_1hf9o0SrVD4Q9TzWGU4x5IzyQPig',
+    google: 'SEh3ULd5KviH_8_1hf9o0SrVD4Q9TzWGU4x5IzyQPig',
   },
   authors: [
     {
